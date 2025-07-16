@@ -1,0 +1,34 @@
+{
+  "info": {
+    "name": "MCP Server - Gemini Prompt",
+    "_postman_id": "a9bc3a51-4b50-4a25-b85c-55f0a5b27aa7",
+    "description": "Sends a prompt to Gemini and stores the result in the database.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "POST - /get-context/",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"prompt\": \"What is quantum computing?\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/get-context/",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["get-context"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
